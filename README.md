@@ -20,3 +20,43 @@ O projeto é desenvolvido com **Python**, **FastAPI** para a API REST e **FFmpeg
   - `.srt` (legenda padrão)
   - `.ass` (legenda avançada)
 - 🎬 Inserção da legenda automaticamente no vídeo
+
+## 🚀 Como rodar este projeto
+
+### 📦 Pré-requisitos
+
+- Python 3.10 ou superior instalado
+- Git instalado
+- Gerenciador de pacotes `pip` (geralmente já vem com o Python)
+
+### 🔧 Instalação
+
+Clone o repositório:
+```bash
+git clone https://github.com/ErickG123/whisper_transcription
+cd whisper_transcription
+```
+
+### Crie e ative um ambiente virtual (recomendado):
+### No Windows
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### No macOS/Linux
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+### Instale as dependências do projeto:
+```bash
+pip install -r requirements.txt
+```
+
+### 🚀 Rodando o projeto
+Execute o seguinte comando para iniciar o servidor:
+```bash
+uvicorn app.main:app --reload
+```
